@@ -2,7 +2,7 @@ import React from 'react'
 
 const index = () => {
   return (
-    <h3 className='alert alert-danger'>hello</h3>
+    <h3>Page section</h3>
   )
 }
 
