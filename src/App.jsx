@@ -11,7 +11,7 @@ const App = () => {
       <Header />
 
 
-      <main className='d-flex'>
+      <main className='main d-flex'>
 
         <div className="sidebarWrapper">
           <Sidebar />
