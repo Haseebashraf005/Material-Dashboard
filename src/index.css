@@ -350,7 +350,7 @@ height: 50px; */
 /* End right section */
 
 /* ////////////////////////////////////// */
-/* Start Dashbarod section */
+/* Start Dashbarod section one */
 
 .userTileContainer .tile {
   width: 49%;
@@ -480,4 +480,55 @@ margin-bottom: 0;
 }
 
 /* ////////////////////////////////////// */
-/* End Dashbarod section */
+/* End Dashbarod section one */
+
+
+/* ////////////////////////////////////// */
+/* Start Dashbarod section two */
+
+
+.sectionTwo{
+  margin-block: 15px;
+}
+
+.sectionTwo .card h5{
+  color: #403e57;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.table.v-align{
+  vertical-align: middle;
+  /* text-align: center; */
+}
+
+
+.table .thead-dark tr th{
+  background: #1866ee !important;
+  border-color: rgba(150, 147, 147, 0.295);
+  color: white;
+  font-size: 14px;
+}
+
+
+.table tbody td {
+  font-style: 13px !important;
+  color: #403e57;
+  font-weight: 500;
+}
+.table tbody td button{
+  min-width: 0;
+}
+.table tbody td button.secondary{
+background:rgba(155, 39, 176, 0.144);
+}
+
+.table tbody td button.success{
+  background:rgba(46, 125, 50, 0.171)
+  }
+
+  .table tbody td button.error{
+    background:rgba(211, 47, 47, 0.26)
+    }
+/* ////////////////////////////////////// */
+/* End Dashbarod section two */

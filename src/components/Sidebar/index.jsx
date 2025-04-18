@@ -104,8 +104,8 @@ const Sidebar = () => {
         </li>
       </ul>
       <br />
-      <div class="logoutWrapper">
-        <div class="logoutBox">
+      <div className="logoutWrapper">
+        <div className="logoutBox">
           <Button className="gap-2">
             <LogoutIcon fontSize="small" />
             <span>Logout</span>
