@@ -469,13 +469,14 @@ height: 50px; */
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
-.lastMonthSale{
-font-size: 15px;
-opacity: 0.60;
-margin-bottom: 0;
+
+.lastMonthSale {
+  font-size: 15px;
+  opacity: 0.60;
+  margin-bottom: 0;
 }
 
-.chartContainer{
+.chartContainer {
   margin-top: 35px !important;
 }
 
@@ -487,23 +488,22 @@ margin-bottom: 0;
 /* Start Dashbarod section two */
 
 
-.sectionTwo{
+.sectionTwo {
   margin-block: 15px;
 }
 
-.sectionTwo .card h5{
+.sectionTwo .card h5 {
   color: #403e57;
   font-size: 18px;
   font-weight: 600;
 }
 
-.table.v-align{
+.table.v-align {
   vertical-align: middle;
-  /* text-align: center; */
 }
 
 
-.table .thead-dark tr th{
+.table .thead-dark tr th {
   background: #1866ee !important;
   border-color: rgba(150, 147, 147, 0.295);
   color: white;
@@ -516,19 +516,72 @@ margin-bottom: 0;
   color: #403e57;
   font-weight: 500;
 }
-.table tbody td button{
+
+.table tbody td button {
   min-width: 0;
 }
-.table tbody td button.secondary{
-background:rgba(155, 39, 176, 0.144);
+
+.table tbody td button.secondary {
+  background: rgba(155, 39, 176, 0.144);
 }
 
-.table tbody td button.success{
-  background:rgba(46, 125, 50, 0.171)
-  }
+.table tbody td button.success {
+  background: rgba(46, 125, 50, 0.171)
+}
 
-  .table tbody td button.error{
-    background:rgba(211, 47, 47, 0.26)
-    }
+.table tbody td button.error {
+  background: rgba(211, 47, 47, 0.26)
+}
+
+
+.table tbody td .oldPrice, .table tbody td .newPrice{
+display: block !important;
+
+}
+
+.table td .productBox{
+  width: 170px;
+
+}
+
+table td .imgWrapper .card {
+border: none;
+}
+table td .imgWrapper{
+  width: 20%;
+  flex: 0 0 40%;
+}
+
+table td .imgWrapper .card {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+table td .info{
+  width: 70%;
+  flex: 0 0 70%;
+}
+.table td .info h6{
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.table td .info p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.8;
+  color: #5e5d72;
+  margin-bottom: 0px;
+}
+
+
 /* ////////////////////////////////////// */
 /* End Dashbarod section two */
+

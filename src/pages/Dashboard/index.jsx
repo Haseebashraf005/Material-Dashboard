@@ -14,6 +14,9 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+
 const Dashboard = () => {
 
 
@@ -293,48 +296,312 @@ const Dashboard = () => {
             </div>
           </div>
 
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col">
+                <div className="table-responsive mt-3">
+                  <table className='table table-bordered v-align'>
+                    <thead className='thead-dark'>
+                      <tr>
+                        <th >UID</th>
+                        <th>PRODUCT</th>
+                        <th>CATEGORY</th>
+                        <th>BRAND</th>
+                        <th>PRICE</th>
+                        <th>STOCK</th>
+                        <th>RATING</th>
+                        <th>ORDER</th>
+                        <th>SALES</th>
+                        <th>ACTION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#1</td>
+                        <td>
+                          <div className="d-flex align-items-center productBox gap-3">
+                            <div className="imgWrapper">
+                              <div className="img card shadow m-0">
+                                <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" class="w-100" />
+                              </div>
+                            </div>
+                            <div class="info pl-3">
+                              <h6>Tops and skirt set for Female...</h6>
+                              <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                            </div>
+                          </div>
+                        </td>
 
-          <div className="table-responsive mt-3">
-            <table className='table table-bordered v-align'>
-              <thead className='thead-dark'>
-                <tr>
-                  <th >UID</th>
-                  <th>PRODUCT</th>
-                  <th>CATEGORY</th>
-                  <th>BRAND</th>
-                  <th>PRICE</th>
-                  <th>STOCK</th>
-                  <th>RATING</th>
-                  <th>ORDER</th>
-                  <th>SALES</th>
-                  <th>ACTION</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>#1</td>
-                  <td>Tops and skirt set for Female...</td>
-                  <td>womans</td>
-                  <td>@richman</td>
-                  <td>richman</td>
-                  <td>$21.00</td>
-                  <td>4.9(16)</td>
-                  <td>380</td>
-                  <td>$38k</td>
-                  <td>
-                    <div className="actions d-flex align-items-center gap-1">
-                      <Button className='secondary' color='secondary'><VisibilityIcon/></Button>
-                      <Button className='success' color='success'><EditIcon/></Button>
-                      <Button className='error' color='error'><DeleteIcon/></Button>
-                    </div>
-                  </td>
-           
-                </tr>
-               
-              </tbody>
-            </table>
+                        <td>womans</td>
+                        <td>@richman</td>
+                        <td>richman</td>
+                        <td>
+                          <del className='oldPrice'>$21.00</del>
+                          <span className='newPrice text-danger'>$18.00</span>
+                        </td>
+                        <td>4.9(16)</td>
+                        <td>380</td>
+                        <td>$38k</td>
+                        <td>
+                          <div className="actions d-flex align-items-center gap-1">
+                            <Button className='secondary' color='secondary'><VisibilityIcon /></Button>
+                            <Button className='success' color='success'><EditIcon /></Button>
+                            <Button className='error' color='error'><DeleteIcon /></Button>
+                          </div>
+                        </td>
 
+                      </tr>
+                      <tr>
+                        <td>#1</td>
+                        <td>
+                          <div class="d-flex align-items-center productBox gap-3">
+                            <div class="imgWrapper">
+                              <div class="img card shadow m-0">
+                                <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" class="w-100" />
+                              </div>
+                            </div>
+                            <div class="info pl-3">
+                              <h6>Tops and skirt set for Female...</h6>
+                              <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>womans</td>
+                        <td>@richman</td>
+                        <td>richman</td>
+                        <td>
+                          <del className='oldPrice'>$21.00</del>
+                          <span className='newPrice text-danger'>$18.00</span>
+                        </td>
+                        <td>4.9(16)</td>
+                        <td>380</td>
+                        <td>$38k</td>
+                        <td>
+                          <div className="actions d-flex align-items-center gap-1">
+                            <Button className='secondary' color='secondary'><VisibilityIcon /></Button>
+                            <Button className='success' color='success'><EditIcon /></Button>
+                            <Button className='error' color='error'><DeleteIcon /></Button>
+                          </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td>#1</td>
+                        <td>
+                          <div class="d-flex align-items-center productBox gap-3">
+                            <div class="imgWrapper">
+                              <div class="img card shadow m-0">
+                                <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" class="w-100" />
+                              </div>
+                            </div>
+                            <div class="info pl-3">
+                              <h6>Tops and skirt set for Female...</h6>
+                              <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>womans</td>
+                        <td>@richman</td>
+                        <td>richman</td>
+                        <td>
+                          <del className='oldPrice'>$21.00</del>
+                          <span className='newPrice text-danger'>$18.00</span>
+                        </td>
+                        <td>4.9(16)</td>
+                        <td>380</td>
+                        <td>$38k</td>
+                        <td>
+                          <div className="actions d-flex align-items-center gap-1">
+                            <Button className='secondary' color='secondary'><VisibilityIcon /></Button>
+                            <Button className='success' color='success'><EditIcon /></Button>
+                            <Button className='error' color='error'><DeleteIcon /></Button>
+                          </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td>#1</td>
+                        <td>
+                          <div class="d-flex align-items-center productBox gap-3">
+                            <div class="imgWrapper">
+                              <div class="img card shadow m-0">
+                                <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" class="w-100" />
+                              </div>
+                            </div>
+                            <div class="info pl-3">
+                              <h6>Tops and skirt set for Female...</h6>
+                              <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>womans</td>
+                        <td>@richman</td>
+                        <td>richman</td>
+                        <td>
+                          <del className='oldPrice'>$21.00</del>
+                          <span className='newPrice text-danger'>$18.00</span>
+                        </td>
+                        <td>4.9(16)</td>
+                        <td>380</td>
+                        <td>$38k</td>
+                        <td>
+                          <div className="actions d-flex align-items-center gap-1">
+                            <Button className='secondary' color='secondary'><VisibilityIcon /></Button>
+                            <Button className='success' color='success'><EditIcon /></Button>
+                            <Button className='error' color='error'><DeleteIcon /></Button>
+                          </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td>#1</td>
+                        <td>
+                          <div class="d-flex align-items-center productBox gap-3">
+                            <div class="imgWrapper">
+                              <div class="img card shadow m-0">
+                                <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" class="w-100" />
+                              </div>
+                            </div>
+                            <div class="info pl-3">
+                              <h6>Tops and skirt set for Female...</h6>
+                              <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>womans</td>
+                        <td>@richman</td>
+                        <td>richman</td>
+                        <td>
+                          <del className='oldPrice'>$21.00</del>
+                          <span className='newPrice text-danger'>$18.00</span>
+                        </td>
+                        <td>4.9(16)</td>
+                        <td>380</td>
+                        <td>$38k</td>
+                        <td>
+                          <div className="actions d-flex align-items-center gap-1">
+                            <Button className='secondary' color='secondary'><VisibilityIcon /></Button>
+                            <Button className='success' color='success'><EditIcon /></Button>
+                            <Button className='error' color='error'><DeleteIcon /></Button>
+                          </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td>#1</td>
+                        <td>
+                          <div class="d-flex align-items-center productBox gap-3">
+                            <div class="imgWrapper">
+                              <div class="img card shadow m-0">
+                                <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" class="w-100" />
+                              </div>
+                            </div>
+                            <div class="info pl-3">
+                              <h6>Tops and skirt set for Female...</h6>
+                              <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>womans</td>
+                        <td>@richman</td>
+                        <td>richman</td>
+                        <td>
+                          <del className='oldPrice'>$21.00</del>
+                          <span className='newPrice text-danger'>$18.00</span>
+                        </td>
+                        <td>4.9(16)</td>
+                        <td>380</td>
+                        <td>$38k</td>
+                        <td>
+                          <div className="actions d-flex align-items-center gap-1">
+                            <Button className='secondary' color='secondary'><VisibilityIcon /></Button>
+                            <Button className='success' color='success'><EditIcon /></Button>
+                            <Button className='error' color='error'><DeleteIcon /></Button>
+                          </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td>#1</td>
+                        <td>
+                          <div class="d-flex align-items-center productBox gap-3">
+                            <div class="imgWrapper">
+                              <div class="img card shadow m-0">
+                                <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" class="w-100" />
+                              </div>
+                            </div>
+                            <div class="info pl-3">
+                              <h6>Tops and skirt set for Female...</h6>
+                              <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>womans</td>
+                        <td>@richman</td>
+                        <td>richman</td>
+                        <td>
+                          <del className='oldPrice'>$21.00</del>
+                          <span className='newPrice text-danger'>$18.00</span>
+                        </td>
+                        <td>4.9(16)</td>
+                        <td>380</td>
+                        <td>$38k</td>
+                        <td>
+                          <div className="actions d-flex align-items-center gap-1">
+                            <Button className='secondary' color='secondary'><VisibilityIcon /></Button>
+                            <Button className='success' color='success'><EditIcon /></Button>
+                            <Button className='error' color='error'><DeleteIcon /></Button>
+                          </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td>#1</td>
+                        <td>
+                          <div class="d-flex align-items-center productBox gap-3">
+                            <div class="imgWrapper">
+                              <div class="img card shadow m-0">
+                                <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" class="w-100" />
+                              </div>
+                            </div>
+                            <div class="info pl-3">
+                              <h6>Tops and skirt set for Female...</h6>
+                              <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>womans</td>
+                        <td>@richman</td>
+                        <td>richman</td>
+                        <td>
+                          <del className='oldPrice'>$21.00</del>
+                          <span className='newPrice text-danger'>$18.00</span>
+                        </td>
+                        <td>4.9(16)</td>
+                        <td>380</td>
+                        <td>$38k</td>
+                        <td>
+                          <div className="actions d-flex align-items-center gap-1">
+                            <Button className='secondary' color='secondary'><VisibilityIcon /></Button>
+                            <Button className='success' color='success'><EditIcon /></Button>
+                            <Button className='error' color='error'><DeleteIcon /></Button>
+                          </div>
+                        </td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+                  <div className="pagination-container d-flex justify-content-end pt-3">
+                    <Pagination count={10} color="primary" showFirstButton showLastButton />
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
           </div>
+
 
 
 
